@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main> 
+            <h1 id="resultado"></h1>
+        <div class="calcu">
+            <button type="button" onclick="imprimir(1)">1</button>
+            <button type="button" onclick="imprimir(2)">2</button>
+            <button type="button" onclick="imprimir(3)">3</button>
+
+            <button type="button" onclick="imprimir(4)">4</button>
+            <button type="button" onclick="imprimir(5)">5</button>
+            <button type="button" onclick="imprimir(6)">6</button>
+
+            <button type="button" onclick="imprimir(7)">7</button>
+            <button type="button" onclick="imprimir(8)">8</button>
+            <button type="button" onclick="imprimir(9)">9</button>
+
+            <button type="button" onclick="imprimir('+')">+</button>
+            <button type=" button" onclick="imprimir('-')">-</button>
+            <button type="button " onclick="imprimir('X') ">X</button>
+            <button type="button " onclick="imprimir('/') ">/</button>
+            <button type="button " onclick="imprimir('=') ">=</button>
+        </div>
+    </main>
+    
+    
+</body>
+    <script>
+            acumulador = '';
+            function imprimir(num) {
+                acumulador += num;
+                document.getElementById("resultado").innerHTML = acumulador;
+            }
+        </script>
+</html>

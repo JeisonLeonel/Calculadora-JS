@@ -1,0 +1,35 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    border-radius: 10px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left: 450px;
+    top: 100px;
+}
+h1 {
+    background-color: white;
+    border-radius: 10px;
+    height: 40px;
+    font-weight: bold;
+}
+.calcu{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    position: relative;
+    top: 100px;
+}
+.calcu button{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
