@@ -4,42 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-    <main> 
-            <h1 id="resultado"></h1>
+<body onload="init();" >
+    <main > 
+            <span id="resultado"></span>
         <div class="calcu">
-            <button type="button" onclick="imprimir(1)">1</button>
-            <button type="button" onclick="imprimir(2)">2</button>
-            <button type="button" onclick="imprimir(3)">3</button>
+            <button id="cero">0</button>
+            <button id="uno">1</button>
+            <button id="dos">2</button>
+            <button id="tres">3</button>
 
-            <button type="button" onclick="imprimir(4)">4</button>
-            <button type="button" onclick="imprimir(5)">5</button>
-            <button type="button" onclick="imprimir(6)">6</button>
+            <button id="cuatro">4</button>
+            <button id="cinco">5</button>
+            <button id="seis">6</button>
 
-            <button type="button" onclick="imprimir(7)">7</button>
-            <button type="button" onclick="imprimir(8)">8</button>
-            <button type="button" onclick="imprimir(9)">9</button>
+            <button id="siete">7</button>
+            <button id="ocho">8</button>
+            <button id="nueve">9</button>
 
-            <button type="button" onclick="imprimir('+')">+</button>
-            <button type=" button" onclick="imprimir('-')">-</button>
-            <button type="button " onclick="imprimir('X') ">X</button>
-            <button type="button " onclick="imprimir('/') ">/</button>
-            <button type="button " onclick="imprimir('=') ">=</button>
+            <button id="suma">+</button>
+            <button id="resta">-</button>
+            <button id="multiplicacion">*</button>
+            <button id="division">/</button>
+            <button id="igual">=</button>
+            <button id="reset">C</button>
         </div>
     </main>
     
-    
-</body>
-    <script>
-            acumulador = '';
-            function imprimir(num) {
-                acumulador += num;
-                document.getElementById("resultado").innerHTML = acumulador;
-            }
-        </script>
+    <script src="js/funcionCalcu.js"></script>
+</body> 
 </html>
